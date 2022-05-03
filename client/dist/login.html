@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Login</title>
+    </head>
+
+    <body class="bg-secondary">
+        <div class="col-md-6 mx-auto">
+            <h1 class="text-center text-white my-5">Login page</h1>
+
+            <div class="card">
+                <div class="card-header">
+                    Login
+                </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-info">
+                                Username and password have been pre-filled for testing review
+                            </div>
+                        </div>
+                        
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input name="email" id="email" class="form-control" value="florin@test.com">
+                            </div>
+                        </div>
+
+                        <div class="col-12 mt-3">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" class="form-control" value="123456">
+                            </div>
+                        </div>
+
+                        <div class="col-auto mx-auto mt-3">
+                            <button class="btn btn-primary px-5" onclick="login()">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/js/login.js"></script>
+    </body>
+</html>
