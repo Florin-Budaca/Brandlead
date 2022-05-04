@@ -20,7 +20,6 @@ class EmployeeFactory extends Factory
         return [
             'name' => $this->faker->unique()->name(),
             'position' => Employee::max('position') + 1,
-            'user_id' => 1
         ];
     }
 }

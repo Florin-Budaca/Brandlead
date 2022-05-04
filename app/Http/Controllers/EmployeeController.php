@@ -49,7 +49,6 @@ class EmployeeController extends Controller
 
         $employee = new Employee();
         $employee->name = $request->input('name');
-        $employee->user_id = auth()->id();
         $employee->position = Employee::max('position') + 1;
         $employee->save();
 
